@@ -30,24 +30,60 @@ function formValidate(){
         text = "Please Enter Valid firstname ";
         error1f.innerHTML = text;
         return false;
-    }
-        else if (lName.length < 3){
+    }else{error1f.innerHTML = "";}
+
+    if (lName.length < 3){
             text = "Please Enter Valid lastname ";
             error2l.innerHTML = text;
             return false;
-        }
-        else if (email.indexOf("@") == -1 || email.length <6){
+        }else{error2l.innerHTML = "";}
+    if (email.indexOf("@") == -1 || email.length <6){
             text = "Please Enter Valid email ";
             error3e.innerHTML = text;
             return false;
-        }
-        else if (nPass.length <6){
+        }else{error3e.innerHTML = "";}
+    if (nPass.length <6){
             text = "Please Enter Valid password ";
             error4p.innerHTML = text;
             return false;
-        }
-        else{
+        }else{error4p.innerHTML = "";}
+        
             alert("done")
             return true;
-        }
+        
 }
+// if (fName.length < 3) {
+//     text = "Please enter a valid first name.";
+//     error1f.innerHTML = text;
+//     return false;
+//   } else {
+//     error1f.innerHTML = "";
+//   }
+
+//   if (lName.length < 3) {
+//     text = "Please enter a valid last name.";
+//     error2l.innerHTML = text;
+//     return false;
+//   } else {
+//     error2l.innerHTML = "";
+//   }
+
+//   if (email.indexOf("@") == -1 || email.length < 6) {
+//     text = "Please enter a valid email address.";
+//     error3e.innerHTML = text;
+//     return false;
+//   } else {
+//     error3e.innerHTML = "";
+//   }
+
+//   if (nPass.length < 6) {
+//     text = "Please enter a valid password.";
+//     error4p.innerHTML = text;
+//     return false;
+//   } else {
+//     error4p.innerHTML = "";
+//   }
+
+//   alert("Form submitted successfully!");
+//   return true;
+// }
